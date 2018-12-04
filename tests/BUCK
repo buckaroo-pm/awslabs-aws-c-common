@@ -1,0 +1,12 @@
+cxx_binary(
+  name = 'tests', 
+  srcs = glob([
+    '*.c', 
+  ]), 
+  compiler_flags = [
+    '-DAWS_UNSTABLE_TESTING_API=1', 
+  ], 
+  deps = [
+    '//:aws-c-common', 
+  ], 
+)
