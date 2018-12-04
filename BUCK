@@ -36,6 +36,7 @@ windows_srcs = glob([
 
 cxx_library(
   name = 'aws-c-common', 
+  header_namespace = '', 
   exported_headers = dict(
     subdir_glob([
       ('include', '**/*.c'), 
